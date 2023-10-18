@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}JStore | Compare Product{% endblock %}
+
+{% block body %}
+{% include "page_head/page_head.html.twig" with {'page_name': 'Compare'} %}
+    <!-- START SECTION SHOP -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="compare_box">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center compare_table">
+                            <tbody>
+                                <tr class="pr_image">
+                                    <td class="row_title">Product Image</td>
+                                    <!-- {% for product in compare %}
+                                        <td class="row_img"><img src="/assets/images/products/{{product.imageUrls[0]}}" alt="compare-img"></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_title">
+                                    <td class="row_title">Product Name</td>
+                                    <!-- {% for product in compare %}
+                                        <td class="product_name"><a href="/product/{{product.slug}}">{{product.name}}</a></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_price">
+                                    <td class="row_title">Price</td>
+                                    <!-- {% for product in compare %}
+                                        <td class="product_price"><span class="price">{{(product.soldePrice/100) | format_currency ('EUR')}}</span></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_rating">
+                                    <!-- <td class="row_title">Rating</td>
+                                    <td>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:80%"></div>
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:68%"></div>
+                                            </div>
+                                            <span class="rating_num">(15)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:87%"></div>
+                                            </div>
+                                            <span class="rating_num">(25)</span>
+                                        </div>
+                                    </td> -->
+                                </tr>
+                                <tr class="pr_add_to_cart">
+                                    <td class="row_title">Add To Cart</td>
+                                    <!-- {% for product in compare %}
+                                        <td class="row_btn"><a href="#" class="btn btn-fill-out"><i class="icon-basket-loaded"></i> Add To Cart</a></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="description">
+                                    <!--<td class="row_title">Description</td>
+                                     {% for product in compare %}
+                                    <td class="row_text"><p>{{product.description}} </p></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_color">
+                                    <!--<td class="row_title">Color</td>
+                                     {% for product in compare %}
+                                    <td class="row_color">
+                                        <div class="product_color_switch">
+                                            <span data-color="#87554B"></span>
+                                            <span data-color="#333333"></span>
+                                            <span data-color="#DA323F"></span>
+                                        </div>
+                                    </td>
+                                    {% endfor %} -->
+                                <tr class="pr_size">
+                                    <!--<td class="row_title">Sizes Available</td>
+                                     {% for product in compare %}
+                                    <td class="row_size"><span>S, M, L, XL</span></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_stock">
+                                    <!--<td class="row_title">Item Availability</td>
+                                     {% for product in compare %}
+                                    <td class="row_stock"><span class="in-stock">In/out Stock</span></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_weight">
+                                    <!--<td class="row_title">Weight</td>
+                                     {% for product in compare %}
+                                    <td class="row_weight"></td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_dimensions">
+                                    <!--<td class="row_title">Dimensions</td>
+                                     {% for product in compare %}
+                                    <td class="row_dimensions">N/A</td>
+                                    {% endfor %} -->
+                                </tr>
+                                <tr class="pr_remove">
+                                    <td class="row_title"></td>
+                                    <!-- {% for product in compare %}
+                                    <td class="row_remove">
+                                        <a href="#"><span>Remove</span> <i class="fa fa-times"></i></a>
+                                    </td>
+                                    {% endfor %} -->
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION SHOP -->
+{% endblock %}
